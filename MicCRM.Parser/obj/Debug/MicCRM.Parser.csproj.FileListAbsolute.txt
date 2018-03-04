@@ -1,0 +1,17 @@
+C:\Users\misha\source\Workspaces\MicCRM\MicCRM.Parser\bin\Debug\MicCRM.Parser.dll
+C:\Users\misha\source\Workspaces\MicCRM\MicCRM.Parser\bin\Debug\MicCRM.Parser.pdb
+C:\Users\misha\source\Workspaces\MicCRM\MicCRM.Parser\bin\Debug\MicCRM.Info.dll
+C:\Users\misha\source\Workspaces\MicCRM\MicCRM.Parser\bin\Debug\`.dll
+C:\Users\misha\source\Workspaces\MicCRM\MicCRM.Parser\bin\Debug\MicCRM.Domain.dll
+C:\Users\misha\source\Workspaces\MicCRM\MicCRM.Parser\bin\Debug\EntityFramework.dll
+C:\Users\misha\source\Workspaces\MicCRM\MicCRM.Parser\bin\Debug\MicCRM.Info.pdb
+C:\Users\misha\source\Workspaces\MicCRM\MicCRM.Parser\bin\Debug\`.pdb
+C:\Users\misha\source\Workspaces\MicCRM\MicCRM.Parser\bin\Debug\`.dll.config
+C:\Users\misha\source\Workspaces\MicCRM\MicCRM.Parser\bin\Debug\MicCRM.Domain.pdb
+C:\Users\misha\source\Workspaces\MicCRM\MicCRM.Parser\bin\Debug\MicCRM.Domain.dll.config
+C:\Users\misha\source\Workspaces\MicCRM\MicCRM.Parser\bin\Debug\EntityFramework.xml
+C:\Users\misha\source\Workspaces\MicCRM\MicCRM.Parser\obj\Debug\MicCRM.Parser.csprojResolveAssemblyReference.cache
+C:\Users\misha\source\Workspaces\MicCRM\MicCRM.Parser\obj\Debug\MicCRM.Parser.csproj.ResolveComReference.cache
+C:\Users\misha\source\Workspaces\MicCRM\MicCRM.Parser\obj\Debug\MicCRM.Parser.csproj.CoreCompileInputs.cache
+C:\Users\misha\source\Workspaces\MicCRM\MicCRM.Parser\obj\Debug\MicCRM.Parser.dll
+C:\Users\misha\source\Workspaces\MicCRM\MicCRM.Parser\obj\Debug\MicCRM.Parser.pdb

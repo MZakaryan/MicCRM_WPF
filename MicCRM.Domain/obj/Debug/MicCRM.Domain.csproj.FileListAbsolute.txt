@@ -1,0 +1,13 @@
+C:\Users\misha\source\Workspaces\MicCRM\MicCRM.Domain\bin\Debug\MicCRM.Domain.dll.config
+C:\Users\misha\source\Workspaces\MicCRM\MicCRM.Domain\bin\Debug\MicCRM.Domain.dll
+C:\Users\misha\source\Workspaces\MicCRM\MicCRM.Domain\bin\Debug\MicCRM.Domain.pdb
+C:\Users\misha\source\Workspaces\MicCRM\MicCRM.Domain\bin\Debug\EntityFramework.dll
+C:\Users\misha\source\Workspaces\MicCRM\MicCRM.Domain\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\misha\source\Workspaces\MicCRM\MicCRM.Domain\bin\Debug\MicCRM.Info.dll
+C:\Users\misha\source\Workspaces\MicCRM\MicCRM.Domain\bin\Debug\MicCRM.Info.pdb
+C:\Users\misha\source\Workspaces\MicCRM\MicCRM.Domain\bin\Debug\EntityFramework.xml
+C:\Users\misha\source\Workspaces\MicCRM\MicCRM.Domain\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\misha\source\Workspaces\MicCRM\MicCRM.Domain\obj\Debug\MicCRM.Domain.csprojResolveAssemblyReference.cache
+C:\Users\misha\source\Workspaces\MicCRM\MicCRM.Domain\obj\Debug\MicCRM.Domain.csproj.CoreCompileInputs.cache
+C:\Users\misha\source\Workspaces\MicCRM\MicCRM.Domain\obj\Debug\MicCRM.Domain.dll
+C:\Users\misha\source\Workspaces\MicCRM\MicCRM.Domain\obj\Debug\MicCRM.Domain.pdb

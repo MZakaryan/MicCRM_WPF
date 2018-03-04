@@ -1,0 +1,179 @@
+﻿<Window x:Class="MicCRM.View.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MicCRM.View"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="760.545" Width="1213.556" WindowState="Normal" ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen">
+    <Grid Name="ParentMenuGrid" Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"></RowDefinition> 
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="90*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0" HorizontalAlignment="Stretch" VerticalAlignment="Top" Height="auto" Background="White" Margin="0,0,0,10" >
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="20*"></ColumnDefinition>
+                <ColumnDefinition Width="60*"></ColumnDefinition>
+                <ColumnDefinition Width="20*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid Grid.Column="0">
+            <Grid Width="100px" HorizontalAlignment ="Left" Margin="50,0,0,0">
+                <Image Name="logoMicrosoft" Source="{StaticResource microsoft_logo}" Width="auto" Visibility="Hidden"/>
+            </Grid>
+            </Grid>
+            <Grid Grid.Column="1">
+            <Grid HorizontalAlignment="Center">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Button Name="ApplicantsBtn" Grid.Column="0" Click="OnApplicantBtnClick" HorizontalAlignment="Center" MinWidth="150" MinHeight="50" Background="#FFF65314"  FontSize="15px" FontFamily="Sylfaen" FontWeight="Bold" Foreground="White" Margin="0,0,5.2,-0.4" Height="50" VerticalAlignment="Top" >
+                   <StackPanel Orientation="Horizontal">
+                        <Image 
+                            Margin="0, 0, 10, 0"
+                            Height="20px"
+                            Source="{StaticResource Applicant_ico}"/>
+                        <TextBlock
+                            Foreground="White"
+                            FontSize="15px" 
+                            FontFamily="Sylfaen" 
+                            FontWeight="Bold" 
+                            Text = "Applicants"/>
+                    </StackPanel>
+                </Button>
+                <Button Name="studentsBtn" Click="OnAllStudentBtnClick"  HorizontalAlignment="Center" MinWidth="150" Background="#FF7CBB00"   FontSize="15px" FontFamily="Sylfaen" FontWeight="Bold" Foreground="White"  Margin="155,0,4.4,-0.4"  Grid.ColumnSpan="2" Height="50" VerticalAlignment="Top">
+                    <StackPanel Orientation="Horizontal">
+                        <Image 
+                            Margin="0, 0, 10, 0"
+                            Height="20px"
+                            Source="{StaticResource Students_ico}"/>
+                        <TextBlock
+                            Foreground="White"
+                            FontSize="15px" 
+                            FontFamily="Sylfaen" 
+                            FontWeight="Bold" 
+                            Text = "Students"/>
+                    </StackPanel>
+                </Button>
+                <Button Click="OnAllTeachersBtnClick" Grid.Column="2" HorizontalAlignment="Center" MinWidth="150" Background="#FF00A1F1"   FontSize="15px" FontFamily="Sylfaen" FontWeight="Bold" Foreground="White"  Margin="0,0,5,0" >
+                    <StackPanel Orientation="Horizontal">
+                        <Image 
+                            Margin="0, 0, 10, 0"
+                            Height="20px"
+                            Source="{StaticResource Teachers_ico}"/>
+                        <TextBlock
+                            Foreground="White"
+                            FontSize="15px" 
+                            FontFamily="Sylfaen" 
+                            FontWeight="Bold" 
+                            Text = "Teachers"/>
+                    </StackPanel>
+                </Button>
+                <Button  Click="AddBtn_Click" Grid.Column="3" HorizontalAlignment="Center" MinWidth="150" Background="#FFFFBB00"   FontSize="15px" FontFamily="Sylfaen" FontWeight="Bold" Foreground="White"  Margin="0,0,5,0" >
+                    <StackPanel Orientation="Horizontal"> 
+                        <TextBlock 
+                            Foreground="White"
+                            FontSize="15px" 
+                            FontFamily="Sylfaen" 
+                            FontWeight="Bold" 
+                            Text = "Add"/>
+                    </StackPanel>
+                </Button>
+            </Grid>
+            </Grid>
+            <Grid Name="ExcelGrid" Grid.Column="2" Visibility="Hidden">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="40*"></ColumnDefinition>
+                    <ColumnDefinition Width="20*"></ColumnDefinition>
+                    <ColumnDefinition Width="40*"></ColumnDefinition>
+                </Grid.ColumnDefinitions> 
+                <Grid Name="ImportGrid" Visibility="Hidden" Grid.Column="0" HorizontalAlignment="Right">
+                    <Button Width="70px" Height="30px" Content="Import" Background="#FF00592D" Foreground="White" Click="ImportClick"/> 
+                </Grid>
+                <Grid Grid.Column="1" >
+                    <Button Width="30px" Height="30px" Click="ExcelIconClick">
+                        <StackPanel Orientation="Horizontal">
+                            <Image  
+                                Source="{StaticResource excel_ico}"/>
+                        </StackPanel>
+                    </Button>
+                </Grid>
+                <Grid Name="ExportGrid" Visibility="Hidden" Grid.Column="2" HorizontalAlignment="left" Margin="0,0,10,0">
+                    <Button Width="70px" Height="30px" Content="Export" Background="#FF00592D" Foreground="White"/> 
+                </Grid>
+            </Grid>
+        </Grid>
+       
+        <Grid Grid.Row="1" VerticalAlignment="Stretch" Background="Azure"  Visibility="Hidden"  Name="SecondryMenuAdd">
+            <Grid HorizontalAlignment="Center">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Button Name="ButtonApplicantAdd" Grid.Column="0" HorizontalAlignment="Center" MinWidth="150" MinHeight="30" Margin="0,5,5,5" Background="#FFC8CFD4"  Click="OnApplicantBtnClickAdd" >
+                    <StackPanel Orientation="Horizontal">
+                        <Image 
+                            Margin="0, 0, 10, 0"
+                            Height="20px"
+                            Source="{StaticResource Applicant_ico}"/>
+                        <TextBlock Name="ApplicantsBtnTextAdd"
+                            Foreground="Black"
+                            FontSize="15px" 
+                            FontFamily="Sylfaen" 
+                            FontWeight="Bold" 
+                            Text = "Applicant"/>
+                    </StackPanel>
+                </Button>
+                <Button Name="ButtonStudentAdd"  Grid.Column="1" HorizontalAlignment="Center" MinWidth="150" MinHeight="30" Background="#FFC8CFD4"  Margin="0,5,5,5"  >
+                    <StackPanel Orientation="Horizontal">
+                        <Image 
+                            Margin="0, 0, 10, 0"
+                            Height="20px" 
+                            Source="{StaticResource Lessons_ico}"/>
+                        <TextBlock Name="StudentsBtnTextAdd"
+                            Foreground="Black"
+                            FontSize="15px" 
+                            FontFamily="Sylfaen" 
+                            FontWeight="Bold"
+                            Text = "Lesson"/>
+                    </StackPanel>
+                </Button>
+                <Button Name="ButtonTeacherAdd"  Grid.Column="2" HorizontalAlignment="Center" MinWidth="150" MinHeight="30" Background="#FFC8CFD4"  Margin="0,5,5,5" >
+                    <StackPanel Orientation="Horizontal">
+                        <Image 
+                            Margin="0, 0, 10, 0"
+                            Height="20px"
+                            Source="{StaticResource Teachers_ico}"/>
+                        <TextBlock Name="TeachersBtnTextAdd"
+                            Foreground="Black"
+                            FontSize="15px" 
+                            FontFamily="Sylfaen" 
+                            FontWeight="Bold" 
+                            Text = "Teacher"/>
+                    </StackPanel>
+                </Button>
+
+            </Grid>
+        </Grid>
+        <Grid Grid.Row="3" VerticalAlignment="Stretch" Background="White" Name="MainGrid">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition  Width="0*"></ColumnDefinition>
+                <ColumnDefinition  Width="100*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid Grid.Column="0" Name="MainFormColleft"></Grid>
+            <Grid Grid.Column="1"  HorizontalAlignment="Stretch" Name="MainFormColRight">
+                <Image Width="400px" Height="150px" VerticalAlignment="Center" HorizontalAlignment="Center"  Source="{StaticResource logo}" />
+            </Grid>
+        </Grid>
+    </Grid>
+
+</Window>
+

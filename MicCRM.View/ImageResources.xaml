@@ -1,0 +1,13 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                   xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                   xmlns:local="clr-namespace:MicCRM.View">
+    <BitmapImage x:Key="logo" UriSource="Resources\logo.png"/>
+    <BitmapImage x:Key="microsoft_logo" UriSource="Resources\microsoft_logo.png"/>
+    <BitmapImage x:Key="Applicant_ico" UriSource="Resources\parse-resume.png"/>
+    <BitmapImage x:Key="Students_ico" UriSource="Resources\students_ico.png"/>
+    <BitmapImage x:Key="Teachers_ico" UriSource="Resources\teachers_ico.png"/>
+    <BitmapImage x:Key="Lessons_ico" UriSource="Resources\lessons_ico.png"/>
+    <BitmapImage x:Key="find_ico" UriSource="Resources\find_ico.png"/>
+    <BitmapImage x:Key="refresh" UriSource="Resources\refresh.png"/>
+    <BitmapImage x:Key="excel_ico" UriSource="Resources\Excel-icon.png"/>
+</ResourceDictionary>

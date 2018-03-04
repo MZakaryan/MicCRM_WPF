@@ -1,0 +1,16 @@
+C:\Users\misha\source\Workspaces\MicCRM\MicCRM.Logic\bin\Debug\`.dll.config
+C:\Users\misha\source\Workspaces\MicCRM\MicCRM.Logic\bin\Debug\`.dll
+C:\Users\misha\source\Workspaces\MicCRM\MicCRM.Logic\bin\Debug\`.pdb
+C:\Users\misha\source\Workspaces\MicCRM\MicCRM.Logic\bin\Debug\EntityFramework.dll
+C:\Users\misha\source\Workspaces\MicCRM\MicCRM.Logic\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\misha\source\Workspaces\MicCRM\MicCRM.Logic\bin\Debug\MicCRM.Domain.dll
+C:\Users\misha\source\Workspaces\MicCRM\MicCRM.Logic\bin\Debug\MicCRM.Info.dll
+C:\Users\misha\source\Workspaces\MicCRM\MicCRM.Logic\bin\Debug\MicCRM.Info.pdb
+C:\Users\misha\source\Workspaces\MicCRM\MicCRM.Logic\bin\Debug\MicCRM.Domain.pdb
+C:\Users\misha\source\Workspaces\MicCRM\MicCRM.Logic\bin\Debug\MicCRM.Domain.dll.config
+C:\Users\misha\source\Workspaces\MicCRM\MicCRM.Logic\bin\Debug\EntityFramework.xml
+C:\Users\misha\source\Workspaces\MicCRM\MicCRM.Logic\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\misha\source\Workspaces\MicCRM\MicCRM.Logic\obj\Debug\MicCRM.Logic.csprojResolveAssemblyReference.cache
+C:\Users\misha\source\Workspaces\MicCRM\MicCRM.Logic\obj\Debug\MicCRM.Logic.csproj.CoreCompileInputs.cache
+C:\Users\misha\source\Workspaces\MicCRM\MicCRM.Logic\obj\Debug\`.dll
+C:\Users\misha\source\Workspaces\MicCRM\MicCRM.Logic\obj\Debug\`.pdb

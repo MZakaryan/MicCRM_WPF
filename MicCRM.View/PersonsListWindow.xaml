@@ -1,0 +1,146 @@
+﻿<UserControl x:Name="PersonsListWindow1" x:Class="MicCRM.View.PersonsListWindow"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:MicCRM.View"
+              mc:Ignorable="d" d:DesignWidth="700.308" d:DesignHeight="500.749" >
+    <Grid HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="0*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="8*"/>
+            <RowDefinition Name="FindRowDefination" Height="5*"/>
+            <RowDefinition Height="87*"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0"  >
+            <Grid  VerticalAlignment="Center" HorizontalAlignment="Center" >
+                <Label Name="lbltextApplicantList" FontSize="20px" FontWeight="DemiBold"  Content="All  " />
+            </Grid>
+        </Grid>
+        <Grid Name="FindGrid" Grid.Row="1" Background="AliceBlue" >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="18*"></ColumnDefinition>
+                <ColumnDefinition Width="18*"></ColumnDefinition>
+                <ColumnDefinition Width="18*"></ColumnDefinition>
+                <ColumnDefinition Width="18*"></ColumnDefinition>
+                <ColumnDefinition Width="18*"></ColumnDefinition>
+                <ColumnDefinition Width="10*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid Grid.Column="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="auto"></ColumnDefinition>
+                    <ColumnDefinition Width="100*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center">
+                    <Label Content="First Name"/>
+                </Grid>
+                <Grid Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Stretch" Margin="0,0,5,0"> 
+                    <TextBox Name="FirstNameTextBox" Height="20" ></TextBox>
+                </Grid>
+            </Grid>
+            <Grid Grid.Column="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="auto"></ColumnDefinition>
+                    <ColumnDefinition Width="100*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,0,5,0">
+                    <Label Content="Last Name"/>
+                </Grid>
+                <Grid Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Stretch">
+                    <TextBox Name="LastNameTextbox" Height="20" ></TextBox>
+                </Grid>
+            </Grid>
+            <Grid Grid.Column="2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="auto"></ColumnDefinition>
+                    <ColumnDefinition Width="100*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center">
+                    <Label Content="Teacher"/>
+                </Grid>
+                <Grid Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Stretch" Margin="0,0,5,0">
+                    <ComboBox Name="TeacherComboBox" Height="20" />
+                </Grid>
+            </Grid>
+            <Grid Grid.Column="3">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="auto"></ColumnDefinition>
+                    <ColumnDefinition Width="100*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center">
+                    <Label Content="Lesson"/>
+                </Grid>
+                <Grid Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Stretch" Margin="0,0,5,0">
+                    <ComboBox Name="LessonsComboBox" Height="20" />
+                </Grid>
+            </Grid>
+            <Grid Grid.Column="4">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="auto"></ColumnDefinition>
+                    <ColumnDefinition Width="100*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center">
+                    <Label Content="Date"/>
+                </Grid> 
+                <DatePicker FontSize="10" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Stretch" Margin="0,0,5,0" Name="FindDatePicker" Height="20" >
+                    <DatePicker.Resources>
+                        <Style TargetType="DatePickerTextBox" >
+                            <Setter Property="IsReadOnly"  Value="True"/>
+                        </Style>
+                    </DatePicker.Resources>
+                </DatePicker>
+            </Grid>
+            <Grid Grid.Column="5">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid Grid.Column="0">
+                    <Button Foreground="White" FontSize="15px" Background="White" BorderBrush="Green" Click="OnFindBtnClicked">
+                        <StackPanel Orientation="Horizontal">
+                            <Border BorderThickness="0" BorderBrush="White"/>
+                            <Image 
+                            Margin="0, 0, 10, 0"
+                            Height="20px"
+                            Source="{StaticResource find_ico}"/> 
+                        </StackPanel>
+                    </Button>
+                </Grid>
+                <Grid Grid.Column="1">
+                    <Button Foreground="White" FontSize="15px" Background="White" BorderBrush="Green" Click="OnRefresh">
+                        <StackPanel Orientation="Horizontal">
+                            <Border BorderThickness="0" BorderBrush="White"/>
+                            <Image 
+                            Margin="0, 0, 10, 0"
+                            Height="20px"
+                            Source="{StaticResource refresh}"/>
+                        </StackPanel>
+                    </Button>
+                </Grid>
+                <Button Foreground="White"  FontSize="15px" Background="White" BorderBrush="Green" Click="OnFindBtnClicked">
+                    <StackPanel Orientation="Horizontal">
+                        <Border BorderThickness="0" BorderBrush="White"/>
+                        <Image 
+                            Margin="0, 0, 10, 0"
+                            Height="20px"
+                            Source="{StaticResource find_ico}"/>
+                    </StackPanel>
+                </Button>
+            </Grid>
+        </Grid>
+        <Grid Grid.Row="2" Background="White"  Grid.RowSpan="2" >
+            <DataGrid IsReadOnly="True" FontSize="15px" Name="ApplList" HorizontalAlignment="Stretch" Background="White"  VerticalAlignment="Stretch" AutoGenerateColumns="False" SelectionChanged="ApplList_SelectionChanged" >
+                <DataGrid.Columns>
+                    <DataGridTextColumn  Width="20*" Header="First Name" Binding="{Binding FirstName}" />
+                    <DataGridTextColumn  Width="20*" Header="Last Name" Binding="{Binding LastName}" />
+                    <DataGridTextColumn  Width="20*" Header="Date" Binding="{Binding Date}" /> 
+                    <DataGridTextColumn  Width="20*" Header="Description" Binding="{Binding Description}" />
+                </DataGrid.Columns>
+            </DataGrid>
+
+        </Grid>
+    </Grid>
+</UserControl>

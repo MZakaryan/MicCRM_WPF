@@ -1,0 +1,6 @@
+C:\Users\misha\source\Workspaces\MicCRM\MicCRM.Info\bin\Debug\MicCRM.Info.dll
+C:\Users\misha\source\Workspaces\MicCRM\MicCRM.Info\bin\Debug\MicCRM.Info.pdb
+C:\Users\misha\source\Workspaces\MicCRM\MicCRM.Info\obj\Debug\MicCRM.Info.csproj.CoreCompileInputs.cache
+C:\Users\misha\source\Workspaces\MicCRM\MicCRM.Info\obj\Debug\MicCRM.Info.dll
+C:\Users\misha\source\Workspaces\MicCRM\MicCRM.Info\obj\Debug\MicCRM.Info.pdb
+C:\Users\misha\source\Workspaces\MicCRM\MicCRM.Info\obj\Debug\MicCRM.Info.csprojResolveAssemblyReference.cache

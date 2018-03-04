@@ -1,0 +1,144 @@
+﻿<UserControl x:Class="MicCRM.View.AddEntityWindow"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:MicCRM.View"
+             mc:Ignorable="d" d:DesignHeight="400" d:DesignWidth="600">
+    <Grid  >
+        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="30*"></ColumnDefinition>
+            <ColumnDefinition Width="40*"></ColumnDefinition>
+            <ColumnDefinition Width="30*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid Name="AddEntityLeftColumn" Grid.Column="0" Background="{DynamicResource {x:Static SystemColors.ControlBrushKey}}">
+        </Grid>
+        <Grid  Name="AddEntityCenterColumn" Grid.Column="1" Margin="10,0">
+         
+            <Grid.RowDefinitions>
+                <RowDefinition  Height="10*"></RowDefinition>
+                <RowDefinition Height="auto"></RowDefinition>
+                <RowDefinition Height="auto"></RowDefinition>
+                <RowDefinition Height="auto"></RowDefinition>
+                <RowDefinition Height="auto"></RowDefinition>
+                <RowDefinition Height="auto"></RowDefinition>
+                <RowDefinition Height="50*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid Name="Row0" Grid.Row = "0">
+                <Label VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="20px" FontWeight="DemiBold">Add Applicant</Label>
+            </Grid>
+            <Grid Name="Row1" Grid.Row = "1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid Grid.Column="0">
+                    <Label VerticalAlignment="Center" HorizontalAlignment="Right">First Name</Label>
+                </Grid>
+                <Grid Grid.Column="1">
+                    <Border Name="firstNameBorder" Style="{StaticResource notCalledBorder}">
+                    <TextBox  Name="firstNametextbox" Height="20px" VerticalAlignment="Center" HorizontalAlignment="Stretch" BorderThickness="0"  TextChanged="FirstNametextbox_TextChanged"  ></TextBox>
+                    </Border>
+                </Grid>
+                <Grid Grid.Column="2">
+                    <Label VerticalAlignment="Center" HorizontalAlignment="Right">Last Name</Label>
+                </Grid>
+                <Grid Grid.Column="3">
+                    <Border Name="LastNameBorder" Style="{StaticResource notCalledBorder}">
+                        <TextBox Name="lastNametextbox" Height="20px" VerticalAlignment="Center" HorizontalAlignment="Stretch" BorderThickness="0"  TextChanged="LastNametextbox_TextChanged"></TextBox>
+                    </Border>
+                </Grid>
+            </Grid>
+            <Grid Name="Row2" Grid.Row = "2" Margin="0,5,0,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid Grid.Column="0">
+                    <Label VerticalAlignment="Center" HorizontalAlignment="Right">Phone</Label>
+                </Grid>
+                <Grid Grid.Column="1">
+                    <Border Name="PhoneBorder" Style="{StaticResource notCalledBorder}">
+                        <TextBox Name="phonetextbox" Height="20px" VerticalAlignment="Center" HorizontalAlignment="Stretch" BorderThickness="0" TextChanged="Phone_TextChanged"></TextBox>
+                    </Border>
+                </Grid>
+                <Grid Grid.Column="2">
+                    <Label VerticalAlignment="Center" HorizontalAlignment="Right">E_mail</Label>
+                </Grid>
+                <Grid Grid.Column="3">
+                    <Border Name="Emailborder" Style="{StaticResource notCalledBorder}">
+                        <TextBox Name="emailtextbox" Height="20px" VerticalAlignment="Center" HorizontalAlignment="Stretch" BorderThickness="0" TextChanged="Email_TextChanged"></TextBox>
+                    </Border>
+                </Grid>
+            </Grid> 
+            <Grid Name="Row3" Grid.Row = "3" Margin="0,5,0,0">
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid Grid.Column="0">
+                    <Label VerticalAlignment="Center" HorizontalAlignment="Right">Date </Label>
+                </Grid>
+                <Grid Grid.Column="1">
+                    <Border Name="StartedAtBorder" Style="{StaticResource notCalledBorder}">
+                        <DatePicker BorderThickness="0" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Stretch" Margin="0,0,5,0" Name="AddStartedatDatePicker" Height="20" >
+                            <DatePicker.Resources>
+                                <Style TargetType="DatePickerTextBox">
+                                    <Setter Property="IsReadOnly" Value="True"/>
+                                </Style>
+                            </DatePicker.Resources>
+                        </DatePicker>
+                    </Border>
+                </Grid>
+                <Grid Grid.Column="2">
+                    <Label VerticalAlignment="Center" HorizontalAlignment="Right">Lesson</Label>
+                </Grid>
+                <Grid Grid.Column="3">
+                    <Border Name="FinishedatBorder" Style="{StaticResource notCalledBorder}">
+                        <ComboBox Name="comboBoxLesson">
+                            
+                        </ComboBox>
+                    </Border>
+                </Grid>
+            </Grid>
+            <Grid Name="Row4" Grid.Row = "4">
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid Grid.Row="0">
+                    <Label VerticalAlignment="Center" HorizontalAlignment="Center">Description</Label>
+                </Grid>
+                <Grid Grid.Row="1">
+                    <RichTextBox Name="DescTextBox" Height=" 100px" >
+                        
+                    </RichTextBox>
+                </Grid>
+            </Grid>
+            <Grid Name="Row5" Grid.Row = "5">
+                <Button Name="AddBtn" Grid.Column="0" HorizontalAlignment="Center"  VerticalAlignment="Center" MinWidth="150" MinHeight="30" Margin="0,5,5,5" Background="Green" Click="AddApplicantBtn_Click" >
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Name="ApplicantsBtnText"
+                            Foreground="White"
+                            FontSize="15px" 
+                            FontFamily="Sylfaen" 
+                            FontWeight="Bold" 
+                            Text = "Add"/>
+                    </StackPanel>
+                </Button>
+            </Grid>
+            <Grid Name="Row6" Grid.Row = "6">
+
+            </Grid>
+        </Grid>
+        <Grid Name="AddEntityRightColumn" Grid.Column="2" Background="{DynamicResource {x:Static SystemColors.ControlBrushKey}}"/>
+    </Grid>
+</UserControl>

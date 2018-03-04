@@ -1,0 +1,70 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2020
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicCRM.Domain", "MicCRM.Domain\MicCRM.Domain.csproj", "{C04F18D3-DCAE-46C2-9138-93322A0C8E30}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicCRM.View", "MicCRM.View\MicCRM.View.csproj", "{A949254B-8D17-44EF-A27F-5D0B72D9426E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicCRM.Logic", "MicCRM.Logic\MicCRM.Logic.csproj", "{F819BEF4-3E87-4F06-9AD9-63C3295FBFF1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicCRM.Info", "MicCRM.Info\MicCRM.Info.csproj", "{105BBA06-862D-42CE-BD07-6077E8CCCC49}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicCRM.Parser", "MicCRM.Parser\MicCRM.Parser.csproj", "{0120721D-E0F1-4A8B-8947-5907CC1940C0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C04F18D3-DCAE-46C2-9138-93322A0C8E30}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C04F18D3-DCAE-46C2-9138-93322A0C8E30}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C04F18D3-DCAE-46C2-9138-93322A0C8E30}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C04F18D3-DCAE-46C2-9138-93322A0C8E30}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A949254B-8D17-44EF-A27F-5D0B72D9426E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A949254B-8D17-44EF-A27F-5D0B72D9426E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A949254B-8D17-44EF-A27F-5D0B72D9426E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A949254B-8D17-44EF-A27F-5D0B72D9426E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F819BEF4-3E87-4F06-9AD9-63C3295FBFF1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F819BEF4-3E87-4F06-9AD9-63C3295FBFF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F819BEF4-3E87-4F06-9AD9-63C3295FBFF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F819BEF4-3E87-4F06-9AD9-63C3295FBFF1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{105BBA06-862D-42CE-BD07-6077E8CCCC49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{105BBA06-862D-42CE-BD07-6077E8CCCC49}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{105BBA06-862D-42CE-BD07-6077E8CCCC49}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{105BBA06-862D-42CE-BD07-6077E8CCCC49}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0120721D-E0F1-4A8B-8947-5907CC1940C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0120721D-E0F1-4A8B-8947-5907CC1940C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0120721D-E0F1-4A8B-8947-5907CC1940C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0120721D-E0F1-4A8B-8947-5907CC1940C0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {82A351FB-BA6C-4A78-B6B1-33935B7E857D}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 6
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://mzakaryan.visualstudio.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = MicCRM.Domain\\MicCRM.Domain.csproj
+		SccProjectName1 = MicCRM.Domain
+		SccLocalPath1 = MicCRM.Domain
+		SccProjectUniqueName2 = MicCRM.Logic\\MicCRM.Logic.csproj
+		SccProjectName2 = MicCRM.Logic
+		SccLocalPath2 = MicCRM.Logic
+		SccProjectUniqueName3 = MicCRM.View\\MicCRM.View.csproj
+		SccProjectName3 = MicCRM.View
+		SccLocalPath3 = MicCRM.View
+		SccProjectUniqueName4 = MicCRM.Info\\MicCRM.Info.csproj
+		SccProjectName4 = MicCRM.Info
+		SccLocalPath4 = MicCRM.Info
+		SccProjectUniqueName5 = MicCRM.Parser\\MicCRM.Parser.csproj
+		SccProjectName5 = MicCRM.Parser
+		SccLocalPath5 = MicCRM.Parser
+	EndGlobalSection
+EndGlobal
